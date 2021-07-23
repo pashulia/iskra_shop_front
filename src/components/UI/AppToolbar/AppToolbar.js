@@ -39,7 +39,7 @@ const AppToolbar = () => {
         <>
             <AppBar position="fixed">
                 <Toolbar>
-                    <Grid container justify="space-between" alignItems="center">
+                    <Grid container justifyContent="space-between" alignItems="center">
                         <Typography variant="h5">
                             <Link className={classes.mainLink} to="/">
                                 Добро пожаловать в AvtoIskra!
