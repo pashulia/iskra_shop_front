@@ -30,7 +30,7 @@ const Products = () => {
                 item
                 container
                 direction="row"
-                justify="space-between"
+                justifyContent="space-between"
                 alignItems="center"
             >
                 <Grid item>
@@ -40,7 +40,7 @@ const Products = () => {
                 </Grid>
                 <Grid item>
                     {user ?
-                        <Button color="primary" component={Link} to="/products/new">
+                        <Button color={"primary"} component={Link} to="/products/new">
                             Add product
                         </Button> : null
                     }

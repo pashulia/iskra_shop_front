@@ -12,14 +12,14 @@ const AnonymousMenu = () => {
             <Button 
                 component={Link} 
                 to="/register" 
-                color={secondary}
+                color="secondary"
             >
                 Регистрация
             </Button>
             <Button 
                 component={Link} 
                 to="/login" 
-                color={secondary}
+                color="secondary"
             >
                 Войти
             </Button>
