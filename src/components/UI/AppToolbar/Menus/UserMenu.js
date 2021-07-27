@@ -8,11 +8,9 @@ import {
   Menu,
   MenuItem,
 } from '@material-ui/core';
-import grey from '@material-ui/core/colors/grey';
 
 import { logoutUser } from '../../../../store/actions/usersActions';
 
-const secondary = grey[500];
 const UserMenu = ({user}) => {
     const [anchorEl, setAnchorEl] = useState(null);
     const open = Boolean(anchorEl);
@@ -36,9 +34,9 @@ const UserMenu = ({user}) => {
                 aria-controls="fade-menu"
                 aria-haspopup="true"
                 onClick={handleClick}
-                color={secondary}
+                color='primary'
             >
-                Привет, {user.username}
+                Добро пожаловать, {user.username}
             </Button>
             <Menu
                 id="fade-menu"
@@ -48,8 +46,8 @@ const UserMenu = ({user}) => {
                 onClose={handleClose}
                 TransitionComponent={Fade}
             >
-                <MenuItem>Profile</MenuItem>
-                <MenuItem onClick={logout}>Logout</MenuItem>
+                <MenuItem>Корзина</MenuItem>
+                <MenuItem onClick={logout}>Выйти</MenuItem>
             </Menu>
         </>
     );
