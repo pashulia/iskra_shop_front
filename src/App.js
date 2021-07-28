@@ -15,6 +15,7 @@ import Login from './containers/Login/Login';
 import NewProduct from './containers/NewProduct/NewProduct';
 import Products from './containers/Products/Products';
 import Register from './containers/Register/Register';
+import Catalog from "./components/UI/Catalog/Catalog";
 
 const ProtectedRoute = ({isAllowed, redirectTo, ...props}) => {
     return isAllowed ?
@@ -30,6 +31,7 @@ const App = () => {
             <NotificationContainer />
             <main>
                 <Container maxWidth="xl">
+                    <Catalog/>
                     <Switch>
                         <ProtectedRoute
                             isAllowed={true}
