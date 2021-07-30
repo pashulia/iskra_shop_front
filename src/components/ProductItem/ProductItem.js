@@ -7,7 +7,6 @@ import {
   Card,
   CardActions,
   CardContent,
-  CardHeader,
   CardMedia,
   Grid,
   IconButton,
@@ -40,20 +39,21 @@ const ProductItem = props => {
   return (
     <Grid item>
       <Card className={classes.card}>
-        <CardHeader title={props.title} />
         <CardMedia
           className={classes.media}
           image={cardImage}
         />
         <CardContent>
-          <Typography variant="h6">
-            Price: {props.price} USD
+          <Typography gutterBottom variant="h5" component="h2">
+            {props.title}
           </Typography>
-          <i>Category: {props.category ? props.category.title : "default category"}</i>
+          <Typography variant="h6">
+            {props.price} тг.
+          </Typography>
         </CardContent>
         <CardActions>
           <IconButton component={Link} to={"/products/" + props.id}>
-            <ArrowForwardIcon />
+            Подробнее <ArrowForwardIcon />
           </IconButton>
         </CardActions>
       </Card>
