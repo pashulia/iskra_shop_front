@@ -11,11 +11,11 @@ import {
 import { Container } from '@material-ui/core';
 
 import AppToolbar from './components/UI/AppToolbar/AppToolbar';
-import Login from './containers/Login/Login';
-import NewProduct from './containers/NewProduct/NewProduct';
-import Products from './containers/Products/Products';
-import Register from './containers/Register/Register';
-import Catalog from "./components/UI/Catalog/Catalog";
+import Catalog from './components/UI/Catalog/Catalog';
+import Login from './pages/Login/Login';
+import NewProduct from './pages/NewProduct/NewProduct';
+import Products from './pages/Products/Products';
+import Register from './pages/Register/Register';
 
 const ProtectedRoute = ({isAllowed, redirectTo, ...props}) => {
     return isAllowed ?
