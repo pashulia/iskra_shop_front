@@ -1,10 +1,11 @@
 import React from 'react';
-import {withStyles} from '@material-ui/core/styles';
+
 import Button from '@material-ui/core/Button';
+import ListItemText from '@material-ui/core/ListItemText';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
+import { withStyles } from '@material-ui/core/styles';
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
-import ListItemText from '@material-ui/core/ListItemText';
 
 const StyledMenu = withStyles({
     paper: {
@@ -58,7 +59,7 @@ export default function Catalog() {
                 onClick={handleClick}
             >
                 <MenuRoundedIcon fontSize="large"/>
-                Каталог
+                Каталог автозапчастей
             </Button>
             <StyledMenu
                 id="customized-menu"
