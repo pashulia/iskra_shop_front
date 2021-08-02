@@ -1,3 +1,10 @@
 .wrap {
-    margin: auto 50px;
+    background: black;
+    margin-top: 100px;
+    padding: 50px 0 10px 0;
+}
+
+.content {
+    color: aliceblue;
+    margin-left: 25px;
 }
