@@ -1,3 +1,5 @@
+import './Catalog.module.css';
+
 import React from 'react';
 
 import Button from '@material-ui/core/Button';
@@ -50,7 +52,7 @@ export default function Catalog() {
     };
 
     return (
-        <div>
+        <div className={c.wrap}>
             <Button
                 aria-controls="customized-menu"
                 aria-haspopup="true"
