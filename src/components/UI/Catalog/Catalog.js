@@ -1,5 +1,3 @@
-import './Catalog.module.css';
-
 import React from 'react';
 
 import Button from '@material-ui/core/Button';
@@ -8,6 +6,8 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import { withStyles } from '@material-ui/core/styles';
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
+
+import c from './Catalog.module.css';
 
 const StyledMenu = withStyles({
     paper: {
