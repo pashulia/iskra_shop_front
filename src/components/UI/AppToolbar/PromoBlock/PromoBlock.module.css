@@ -1,0 +1,35 @@
+.wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /*margin: 100px 0 100px 100px;*/
+}
+
+.promoBlock {
+    align-items: stretch;
+    max-width: 500px;
+}
+
+.promoImg {
+    max-width: 300px;
+    position: relative;
+}
+
+.promoImage {
+    max-width: 350px;
+    position: relative;
+}
+
+.promoArticle {
+    position: absolute;
+    top: 320px;
+    left: 300px;
+}
+
+.article {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    color: darkblue;
+    font-size: 20pt;
+}
