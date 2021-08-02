@@ -12,6 +12,7 @@ import { Container } from '@material-ui/core';
 
 import AppToolbar from './components/UI/AppToolbar/AppToolbar';
 import Catalog from './components/UI/Catalog/Catalog';
+import Footer from './components/UI/Footer/Footer';
 import Login from './pages/Login/Login';
 import NewProduct from './pages/NewProduct/NewProduct';
 import Products from './pages/Products/Products';
@@ -64,6 +65,7 @@ const App = () => {
                     </Switch>
                 </Container>
             </main>
+            <Footer />
         </>
     );
 };
