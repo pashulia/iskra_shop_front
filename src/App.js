@@ -17,7 +17,7 @@ import Login from './pages/Login/Login';
 import NewProduct from './pages/NewProduct/NewProduct';
 import Products from './pages/Products/Products';
 import Register from './pages/Register/Register';
-import PromoBlock from "./components/UI/AppToolbar/PromoBlock/PromoBlock";
+import PromoBlock from "./components/UI/PromoBlock/PromoBlock";
 // import "./App.css"
 
 const ProtectedRoute = ({isAllowed, redirectTo, ...props}) => {
