@@ -18,6 +18,7 @@ import NewProduct from './pages/NewProduct/NewProduct';
 import Products from './pages/Products/Products';
 import Register from './pages/Register/Register';
 import PromoBlock from "./components/UI/PromoBlock/PromoBlock";
+import ProductTabs from "./components/UI/ProductTabs/ProductTabs";
 // import "./App.css"
 
 const ProtectedRoute = ({isAllowed, redirectTo, ...props}) => {
@@ -36,6 +37,7 @@ const App = () => {
                 <Container maxWidth="xl">
                     <Catalog/>
                     <PromoBlock/>
+                    <ProductTabs/>
                     <Switch>
                         <ProtectedRoute
                             isAllowed={true}
