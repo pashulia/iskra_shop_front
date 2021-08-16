@@ -7,13 +7,12 @@
     border: 1px solid grey;
     position: relative;
     overflow: hidden;
-    margin: 15px 0 0;
+    margin-right: 50px;
 }
 
 .bannerSmall {
     position: relative;
     overflow: hidden;
-    margin: 30px 0 0;
 }
 
 .bannerText {
@@ -31,14 +30,14 @@
 }
 
 .bannerText h2 {
-    color: white;
+    color: darkred;
     font-size: 32px;
     font-weight: bold;
     margin: 0;
 }
 
 .bannerText p {
-    color: white;
+    color: darkblue;
     font-weight: 100;
     font-size: 25px;
     margin: 0;
