@@ -1,0 +1,40 @@
+.support-client {
+  display: block;
+  margin-bottom: 40px;
+  min-height: 35px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.single-support {
+  margin-left: 10px;
+}
+
+.single-support i {
+  color: #898989;
+  float: left;
+  font-size: 30px;
+}
+
+.support-text {
+  margin-left: 45px;
+}
+
+.support-text h1 {
+  color: #7e7e7e;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.support-text p {
+  line-height: 12px;
+  margin: 0;
+  color: #7e7e7e;
+
+}
