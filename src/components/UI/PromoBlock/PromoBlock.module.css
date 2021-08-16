@@ -30,14 +30,14 @@
 }
 
 .bannerText h2 {
-    color: white;
+    color: darkred;
     font-size: 32px;
     font-weight: bold;
     margin: 0;
 }
 
 .bannerText p {
-    color: white;
+    color: darkblue;
     font-weight: 100;
     font-size: 25px;
     margin: 0;

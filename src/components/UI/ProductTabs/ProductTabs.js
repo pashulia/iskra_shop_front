@@ -1,22 +1,25 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import {Card, CardGroup, Tab, Tabs} from "react-bootstrap";
-import imagePromo from "../../../assets/image/denso-3.jpg";
-import imgPromo from "../../../assets/image/ngk-4.jpg";
+import denso from "../../../assets/image/denso-3.jpg";
+import ngk from "../../../assets/image/ngk-4.jpg";
+import ProductsNGK from "./ProductNGK/ProductNGK";
+import ProductsDenso from "./ProductDenso/ProductDenso";
+import ProductsBosch from "./ProductBosch/ProductBosch";
 
 function ProductTabs() {
 
     return (
-        <div style={{ display: 'block', width: 700, padding: 30 }}>
+        <div style={{display: 'block', width: 1000, padding: 30}}>
             <Tabs defaultActiveKey="first">
                 <Tab eventKey="first" title="NGK">
-                    Hii, I am 1st tab content
+                    <ProductsNGK/>
                 </Tab>
                 <Tab eventKey="second" title="DENSO">
-                    Hii, I am 2nd tab content
+                    <ProductsDenso/>
                 </Tab>
                 <Tab eventKey="third" title="BOSCH">
-                    Hii, I am 3rd tab content
+                    <ProductsBosch/>
                 </Tab>
             </Tabs>
         </div>
@@ -33,7 +36,7 @@ export default ProductTabs;
 //         margin: '15px 0 0'
 //     }}>
 //         <a>
-//             <Card.Img variant="bottom" src={imagePromo}/>
+//             <Card.Img variant="bottom" src={denso}/>
 //         </a>
 //         <Card.Title style={{
 //             fontFamily: 'Century',
@@ -56,7 +59,7 @@ export default ProductTabs;
 //         margin: '30px 0 0'
 //     }}>
 //         <a>
-//             <Card.Img variant="top" src={imgPromo} style={{width: '25rem'}}/>
+//             <Card.Img variant="top" src={ngk} style={{width: '25rem'}}/>
 //         </a>
 //         <Card.Title style={{
 //             fontFamily: 'Century',
