@@ -1,19 +1,19 @@
 import React from "react";
 import {Card, CardGroup} from "react-bootstrap";
-import first from "../../../../assets/productImages/NGK1682.jpg";
-import second from "../../../../assets/productImages/NGK1961.jpg";
-import third from "../../../../assets/productImages/NGK3967.jpg";
-import fourth from "../../../../assets/productImages/NGK96596.jpg";
+import first from "../../../../assets/productImages/hi-q1.jpeg";
+import second from "../../../../assets/productImages/hi-q2.jpg";
+import third from "../../../../assets/productImages/hi-q3.jpg";
+import fourth from "../../../../assets/productImages/hi-q4.jpeg";
 
-const ProductsNGK = () => {
+const ProductsHiQ = () => {
     return (
         <CardGroup>
             <Card border="light" style={{marginRight: '25px'}}>
                 <Card.Img variant="top" src={first}/>
                 <Card.Body>
-                    <Card.Subtitle style={{fontSize: '14px'}}>NGK 1682 DCPR7EGP</Card.Subtitle>
+                    <Card.Subtitle style={{fontSize: '14px'}}>Sangsin Hi-Q SP1048</Card.Subtitle>
                     <Card.Text>
-                        2000тг
+                        6000тг
                     </Card.Text>
                     <small className="text-muted">
                         <Card.Link href="#">Добавить в корзину</Card.Link>
@@ -23,9 +23,9 @@ const ProductsNGK = () => {
             <Card border="light" style={{marginRight: '25px', marginLeft: '25px'}}>
                 <Card.Img variant="top" src={second}/>
                 <Card.Body>
-                    <Card.Subtitle style={{fontSize: '14px'}}>NGK 1208 ILZFR6D-11</Card.Subtitle>
+                    <Card.Subtitle style={{fontSize: '14px'}}>Sangsin Hi-Q SP1206</Card.Subtitle>
                     <Card.Text>
-                        5990тг
+                        10000тг
                     </Card.Text>
                     <small className="text-muted">
                         <Card.Link href="#">Добавить в корзину</Card.Link>
@@ -35,9 +35,9 @@ const ProductsNGK = () => {
             <Card border="light" style={{marginRight: '25px', marginLeft: '25px'}}>
                 <Card.Img variant="top" src={third}/>
                 <Card.Body>
-                    <Card.Subtitle style={{fontSize: '14px'}}>NGK 3967 BKR5EKB-11</Card.Subtitle>
+                    <Card.Subtitle style={{fontSize: '14px'}}>Sangsin Hi-Q SP1271</Card.Subtitle>
                     <Card.Text>
-                        1490тг
+                        9000тг
                     </Card.Text>
                     <small className="text-muted">
                         <Card.Link href="#">Добавить в корзину</Card.Link>
@@ -46,10 +46,10 @@ const ProductsNGK = () => {
             </Card>
             <Card border="light" style={{marginLeft: '25px'}}>
                 <Card.Img variant="top" src={fourth}/>
-                <Card.Body style={{padding: '15px 0 0 10px'}}>
-                    <Card.Subtitle style={{fontSize: '14px'}}>NGK 96596 ZKER6A-10EG</Card.Subtitle>
+                <Card.Body>
+                    <Card.Subtitle style={{fontSize: '14px'}}>Sangsin Hi-Q SP1375</Card.Subtitle>
                     <Card.Text>
-                        2490тг
+                        10000тг
                     </Card.Text>
                     <small className="text-muted">
                         <Card.Link href="#">Добавить в корзину</Card.Link>
@@ -60,4 +60,4 @@ const ProductsNGK = () => {
     )
 };
 
-export default ProductsNGK;
+export default ProductsHiQ;

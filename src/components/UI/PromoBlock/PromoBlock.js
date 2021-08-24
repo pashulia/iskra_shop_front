@@ -1,5 +1,4 @@
 import React from 'react';
-// import 'bootstrap/dist/css/bootstrap.css';
 import c from "./PromoBlock.module.css"
 import denso from "../../../assets/image/denso-3.jpg";
 import ngk from "../../../assets/image/ngk-4.jpg";
