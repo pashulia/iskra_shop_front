@@ -1,14 +1,14 @@
 import React from 'react';
 
-import { NotificationContainer } from 'react-notifications';
-import { useSelector } from 'react-redux';
+import {NotificationContainer} from 'react-notifications';
+import {useSelector} from 'react-redux';
 import {
-  Redirect,
-  Route,
-  Switch,
+    Redirect,
+    Route,
+    Switch,
 } from 'react-router-dom';
 
-import { Container } from '@material-ui/core';
+import {Container} from '@material-ui/core';
 
 import AppToolbar from './components/UI/AppToolbar/AppToolbar';
 import Catalog from './components/UI/Catalog/Catalog';
@@ -19,7 +19,8 @@ import Login from './pages/Login/Login';
 import NewProduct from './pages/NewProduct/NewProduct';
 import Products from './pages/Products/Products';
 import Register from './pages/Register/Register';
-import ProductTabs from "./components/UI/ProductTabs/ProductTabs";
+import SparkPlugProductTabs from "./components/UI/ProductTabs/SparkPlugProductTabs";
+import BrakePadsProductTabs from "./components/UI/ProductTabs/BrakePadsProductTabs";
 // import "./App.css"
 
 const ProtectedRoute = ({isAllowed, redirectTo, ...props}) => {
@@ -36,18 +37,8 @@ const App = () => {
             <NotificationContainer/>
             <main>
                 <Container maxWidth="xl">
-                <InfoBlock />
-                    <Catalog/>
-                    <PromoBlock/>
-                    <ProductTabs/>
+                    <InfoBlock/>
                     <Switch>
-                        <ProtectedRoute
-                            isAllowed={true}
-                            redirectTo={"/login"}
-                            path="/"
-                            exact
-                            component={Products}
-                        />
                         <ProtectedRoute
                             isAllowed={user}
                             redirectTo={"/login"}
@@ -70,6 +61,17 @@ const App = () => {
                             component={Login}
                         />
                     </Switch>
+                    <Catalog/>
+                    <PromoBlock/>
+                    <SparkPlugProductTabs/>
+                    <BrakePadsProductTabs/>
+                    <ProtectedRoute
+                        isAllowed={true}
+                        redirectTo={"/login"}
+                        path="/"
+                        exact
+                        component={Products}
+                    />
                 </Container>
             </main>
             <Footer/>
