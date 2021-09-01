@@ -1,16 +1,19 @@
 import React from "react";
 import {Card, CardGroup} from "react-bootstrap";
-import brand from "../../../../assets/productImages/Garanti1.jpg";
+import first from "../../../../assets/productImages/tesla4bg.jpeg";
+import second from "../../../../assets/productImages/TESLAgreen.jpg";
+import third from "../../../../assets/productImages/TeslaIgnition.jpg";
+import fourth from "../../../../assets/productImages/TESLAblue.jpg";
 
-const ProductsGaranti = () => {
+const ProductsTesla = () => {
     return (
         <CardGroup>
             <Card border="light" style={{marginRight: '25px'}}>
-                <Card.Img variant="top" src={brand}/>
+                <Card.Img variant="top" src={first}/>
                 <Card.Body>
-                    <Card.Subtitle style={{fontSize: '14px'}}>Garanti 01214.22</Card.Subtitle>
+                    <Card.Subtitle style={{fontSize: '14px'}}>Tesla T482B</Card.Subtitle>
                     <Card.Text>
-                        2800тг
+                        6990тг
                     </Card.Text>
                     <small className="text-muted">
                         <Card.Link href="#">Добавить в корзину</Card.Link>
@@ -18,11 +21,11 @@ const ProductsGaranti = () => {
                 </Card.Body>
             </Card>
             <Card border="light" style={{marginRight: '25px', marginLeft: '25px'}}>
-                <Card.Img variant="top" src={brand}/>
+                <Card.Img variant="top" src={second}/>
                 <Card.Body>
-                    <Card.Subtitle style={{fontSize: '14px'}}>Garanti 0306.12</Card.Subtitle>
+                    <Card.Subtitle style={{fontSize: '14px'}}>Tesla T247P</Card.Subtitle>
                     <Card.Text>
-                        4600тг
+                        6990тг
                     </Card.Text>
                     <small className="text-muted">
                         <Card.Link href="#">Добавить в корзину</Card.Link>
@@ -30,11 +33,11 @@ const ProductsGaranti = () => {
                 </Card.Body>
             </Card>
             <Card border="light" style={{marginRight: '25px', marginLeft: '25px'}}>
-                <Card.Img variant="top" src={brand}/>
+                <Card.Img variant="top" src={third}/>
                 <Card.Body>
-                    <Card.Subtitle style={{fontSize: '14px'}}>Garanti 0315.04</Card.Subtitle>
+                    <Card.Subtitle style={{fontSize: '14px'}}>Tesla T181b</Card.Subtitle>
                     <Card.Text>
-                        4800тг
+                        11990тг
                     </Card.Text>
                     <small className="text-muted">
                         <Card.Link href="#">Добавить в корзину</Card.Link>
@@ -42,11 +45,11 @@ const ProductsGaranti = () => {
                 </Card.Body>
             </Card>
             <Card border="light" style={{marginLeft: '25px'}}>
-                <Card.Img variant="top" src={brand}/>
+                <Card.Img variant="top" src={fourth}/>
                 <Card.Body>
-                    <Card.Subtitle style={{fontSize: '14px'}}>Garanti 0367.00</Card.Subtitle>
+                    <Card.Subtitle style={{fontSize: '14px'}}>Tesla T297B</Card.Subtitle>
                     <Card.Text>
-                        4000тг
+                        9990тг
                     </Card.Text>
                     <small className="text-muted">
                         <Card.Link href="#">Добавить в корзину</Card.Link>
@@ -57,4 +60,4 @@ const ProductsGaranti = () => {
     )
 };
 
-export default ProductsGaranti;
+export default ProductsTesla;

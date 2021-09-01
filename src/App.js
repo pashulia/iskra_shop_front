@@ -21,6 +21,7 @@ import Products from './pages/Products/Products';
 import Register from './pages/Register/Register';
 import SparkPlugProductTabs from "./components/UI/ProductTabs/SparkPlugProductTabs";
 import BrakePadsProductTabs from "./components/UI/ProductTabs/BrakePadsProductTabs";
+import WiresProductTabs from "./components/UI/ProductTabs/WiresProductTabs";
 // import "./App.css"
 
 const ProtectedRoute = ({isAllowed, redirectTo, ...props}) => {
@@ -65,6 +66,7 @@ const App = () => {
                     <PromoBlock/>
                     <SparkPlugProductTabs/>
                     <BrakePadsProductTabs/>
+                    <WiresProductTabs/>
                     <ProtectedRoute
                         isAllowed={true}
                         redirectTo={"/login"}
