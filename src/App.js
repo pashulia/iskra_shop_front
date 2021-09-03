@@ -22,7 +22,8 @@ import Register from './pages/Register/Register';
 import SparkPlugProductTabs from "./components/UI/ProductTabs/SparkPlugProductTabs";
 import BrakePadsProductTabs from "./components/UI/ProductTabs/BrakePadsProductTabs";
 import WiresProductTabs from "./components/UI/ProductTabs/WiresProductTabs";
-// import "./App.css"
+import "./App.css"
+import PopularProductTabs from "./components/UI/ProductTabs/PopularProductTabs";
 
 const ProtectedRoute = ({isAllowed, redirectTo, ...props}) => {
     return isAllowed ?
@@ -33,7 +34,7 @@ const ProtectedRoute = ({isAllowed, redirectTo, ...props}) => {
 const App = () => {
     const user = useSelector(state => state.users.user);
     return (
-        <>
+        <div>
             <AppToolbar/>
             <NotificationContainer/>
             <main>
@@ -62,11 +63,18 @@ const App = () => {
                             component={Login}
                         />
                     </Switch>
-                    <Catalog/>
-                    <PromoBlock/>
-                    <SparkPlugProductTabs/>
-                    <BrakePadsProductTabs/>
-                    <WiresProductTabs/>
+                    <div className="App">
+                        <div>
+                            <Catalog/>
+                            <PopularProductTabs/>
+                        </div>
+                        <div className="app-content">
+                            <PromoBlock/>
+                            <SparkPlugProductTabs/>
+                            <BrakePadsProductTabs/>
+                            <WiresProductTabs/>
+                        </div>
+                    </div>
                     <ProtectedRoute
                         isAllowed={true}
                         redirectTo={"/login"}
@@ -77,7 +85,7 @@ const App = () => {
                 </Container>
             </main>
             <Footer/>
-        </>
+        </div>
     );
 };
 
