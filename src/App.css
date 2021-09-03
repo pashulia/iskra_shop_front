@@ -1,4 +1,12 @@
-/*.wrap {*/
-/*    max-width: 100%;*/
-/*    display: flex;*/
-/*}*/
+.App {
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+    "h h"
+    "n c";
+    grid-template-rows: 70px 1fr;
+}
+
+.app-content {
+    grid-area: c;
+}

@@ -7,7 +7,7 @@ import ProductsGaranti from "./ProductGaranti/ProductGaranti";
 function BrakePadsProductTabs() {
 
     return (
-        <div style={{display: 'block', width: 1000, padding: 30}}>
+        <div style={{display: 'block', width: 950, padding: 30}}>
             <Tabs defaultActiveKey="first">
                 <Tab eventKey="first" title="Тормозные колодки Hi-Q">
                     <ProductsHiQ/>
