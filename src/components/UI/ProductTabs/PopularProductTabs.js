@@ -7,7 +7,7 @@ function PopularProductTabs() {
     return (
         <div style={{display: 'block', width: 200, padding: 30}}>
             <h3 style={{marginLeft: 70}}>ПОПУЛЯРНОЕ</h3>
-            <hr style={{marginLeft: 70, border: '1px solid', width: 250}}/>
+            <hr style={{marginLeft: 70, border: '1px solid', width: '18rem'}}/>
             <PopularProduct/>
         </div>
     );
