@@ -20,7 +20,7 @@ const Main = () => {
             </header>
             <Divider style={{backgroundColor: 'blue', height: '2px'}} />
             <div className="App">
-                <div>
+                <div className="Sidebar">
                     <Catalog />
                     <PopularProductTabs />
                 </div>
