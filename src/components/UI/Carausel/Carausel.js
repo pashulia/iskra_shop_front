@@ -77,9 +77,9 @@ function Carausel() {
               <Box
                 component="img"
                 sx={{
-                  height: 555,
+                  height: 600,
                   display: 'block',
-                  maxWidth: 1000,
+                  maxWidth: 900,
                   overflow: 'hidden',
                   width: '100%',
                 }}
