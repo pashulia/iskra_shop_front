@@ -5,8 +5,13 @@
     "h h"
     "n c";
     grid-template-rows: 70px 1fr;
+    background-color: #f5f5f5;
 }
 
 .app-content {
     grid-area: c;
+}
+
+*Card {
+    text-decoration: none;
 }

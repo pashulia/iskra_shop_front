@@ -6,14 +6,14 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 import {
-  AppBar,
   Grid,
   Toolbar,
   Typography,
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
-import Logo from '../../../assets/logo/AvtoIskra_free-file-3.png';
+import Logo from '../../../assets/logo/AutoIskra-logo.png';
+import InfoBlock from './HeaderInfoBlock/InfoBlock/InfoBlock';
 import AnonymousMenu from './Menus/AnonymousMenu';
 import UserMenu from './Menus/UserMenu';
 
@@ -38,23 +38,22 @@ const AppToolbar = () => {
     const logo = Logo;
     return (
         <>
-            <AppBar position="fixed">
-                <Toolbar>
-                    <Grid container justifyContent="space-between" alignItems="center">
-                        <Typography variant="h5">
-                            <Link className={classes.mainLink} to="/">
-                                <img src={logo} alt="logo" className={classes.logo}/>
-                            </Link>
-                        </Typography>
-                        <Grid item>
-                            {
-                                user ? <UserMenu user={user}/> : <AnonymousMenu/>
-                            }
-                        </Grid>
+            <Toolbar>
+                <Grid container justifyContent="space-between" alignItems="center">
+                    <InfoBlock/>
+                    <Typography variant="h5">
+                        <Link className={classes.mainLink} to="/">
+                            <img src={logo} alt="logo" className={classes.logo}/>
+                        </Link>
+                    </Typography>
+                    <Grid item>
+                        {
+                            user ? <UserMenu user={user}/> : <AnonymousMenu/>
+                        }
                     </Grid>
-                </Toolbar>
-            </AppBar>
-            <Toolbar className={classes.staticToolbar}/>
+                </Grid>
+                
+            </Toolbar>
         </>
     );
 };
