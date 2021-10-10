@@ -1,9 +1,16 @@
-import React from "react";
-import {Card, CardGroup} from "react-bootstrap";
-import first from "../../../../assets/productImages/NGK1682.jpg";
-import second from "../../../../assets/productImages/NGK1961.jpg";
-import third from "../../../../assets/productImages/NGK3967.jpg";
-import fourth from "../../../../assets/productImages/NGK96596.jpg";
+import '../../../../App.css';
+
+import React from 'react';
+
+import {
+  Card,
+  CardGroup,
+} from 'react-bootstrap';
+
+import first from '../../../../assets/productImages/NGK1682.jpg';
+import second from '../../../../assets/productImages/NGK1961.jpg';
+import third from '../../../../assets/productImages/NGK3967.jpg';
+import fourth from '../../../../assets/productImages/NGK96596.jpg';
 
 const ProductsNGK = () => {
     return (
@@ -16,7 +23,7 @@ const ProductsNGK = () => {
                         2000тг
                     </Card.Text>
                     <small className="text-muted">
-                        <Card.Link href="#">Добавить в корзину</Card.Link>
+                        <Card.Link style={{textDecoration: 'none'}} href="#">Добавить в корзину</Card.Link>
                     </small>
                 </Card.Body>
             </Card>
@@ -28,7 +35,7 @@ const ProductsNGK = () => {
                         5990тг
                     </Card.Text>
                     <small className="text-muted">
-                        <Card.Link href="#">Добавить в корзину</Card.Link>
+                        <Card.Link style={{textDecoration: 'none'}} href="#">Добавить в корзину</Card.Link>
                     </small>
                 </Card.Body>
             </Card>
@@ -40,19 +47,19 @@ const ProductsNGK = () => {
                         1490тг
                     </Card.Text>
                     <small className="text-muted">
-                        <Card.Link href="#">Добавить в корзину</Card.Link>
+                        <Card.Link style={{textDecoration: 'none'}} href="#">Добавить в корзину</Card.Link>
                     </small>
                 </Card.Body>
             </Card>
-            <Card border="light" style={{marginLeft: '25px'}}>
+            <Card border="light" style={{marginRight: '25px', marginLeft: '25px'}}>
                 <Card.Img variant="top" src={fourth}/>
-                <Card.Body style={{padding: '15px 0 0 10px'}}>
+                <Card.Body>
                     <Card.Subtitle style={{fontSize: '14px'}}>NGK 96596 ZKER6A-10EG</Card.Subtitle>
                     <Card.Text>
                         2490тг
                     </Card.Text>
                     <small className="text-muted">
-                        <Card.Link href="#">Добавить в корзину</Card.Link>
+                        <Card.Link style={{textDecoration: 'none'}} href="#">Добавить в корзину</Card.Link>
                     </small>
                 </Card.Body>
             </Card>

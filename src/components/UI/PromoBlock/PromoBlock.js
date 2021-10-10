@@ -1,8 +1,13 @@
 import React from 'react';
-import c from "./PromoBlock.module.css"
-import denso from "../../../assets/image/denso-3.jpg";
-import ngk from "../../../assets/image/ngk-4.jpg";
-import {Card, CardGroup} from "react-bootstrap";
+
+import {
+  Card,
+  CardGroup,
+} from 'react-bootstrap';
+
+import denso from '../../../assets/image/denso-3.jpg';
+import ngk from '../../../assets/image/ngk-4.jpg';
+import c from './PromoBlock.module.css';
 
 export default function PromoBlock() {
 
@@ -11,7 +16,7 @@ export default function PromoBlock() {
             <CardGroup className={c.wrap}>
                 <Card className={c.bannerBig}>
                     <a>
-                        <Card.Img variant="bottom" src={denso} style={{width: '29rem'}}/>
+                        <Card.Img variant="bottom" src={denso} style={{width: '23rem'}}/>
                     </a>
                     <Card.Title className={c.bannerText}>
                         <h1>Коллекция Зима-2022</h1>
