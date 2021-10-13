@@ -52,7 +52,6 @@ const AppToolbar = () => {
                         }
                     </Grid>
                 </Grid>
-                
             </Toolbar>
         </>
     );

@@ -51,7 +51,7 @@ function Carausel() {
   };
 
   return (
-    <Box sx={{ maxWidth: 1000, flexGrow: 1 }}>
+    <Box sx={{ maxWidth: 900, flexGrow: 1, marginLeft: 50 }}>
       <Paper
         square
         elevation={0}
@@ -79,7 +79,7 @@ function Carausel() {
                 sx={{
                   height: 600,
                   display: 'block',
-                  maxWidth: 900,
+                  maxWidth: 950,
                   overflow: 'hidden',
                   width: '100%',
                 }}

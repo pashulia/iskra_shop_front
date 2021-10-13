@@ -11,7 +11,7 @@ const fetchProductsSuccess = products => {
 export const fetchProducts = () => {
   return async dispatch => {
     try {
-      const response = await axios.get("/products");
+      const response = await axios.get("/products?category=6162becd0f498e0de00f7614");
       dispatch(fetchProductsSuccess(response.data));
     } catch(e) {
       console.log(e);
