@@ -1,0 +1,42 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == regular-desktop {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //12000px
+  }
+  @if $breakpoint == big-tablets {
+    @media only screen and (max-width: 64em) {
+      @content;
+    } //1024px
+  }
+  @if $breakpoint == small-tablets {
+    @media only screen and (max-width: 47.94em) {
+      @content;
+    } //767px
+  }
+  @if $breakpoint == IPad {
+    @media only screen and (max-width: 48em) {
+      @content;
+    } //768px
+  }
+  @if $breakpoint == small-phone {
+    @media only screen and (max-width: 30em) {
+      @content;
+    } //480px
+  }
+  @if $breakpoint == IphonePlus {
+    @media only screen and (max-width: 25.875em) {
+      @content;
+    } //414px
+  }
+  @if $breakpoint == Iphone6 {
+    @media only screen and (max-width: 23.438em) {
+      @content;
+    } //375px
+  }
+  @if $breakpoint == Iphone5 {
+    @media only screen and (max-width: 20.000em) {
+      @content;
+    } //320px
+  }
+}

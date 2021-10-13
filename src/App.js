@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 
 import React from 'react';
 
@@ -10,8 +10,12 @@ import {
   Switch,
 } from 'react-router-dom';
 
-import { Container } from '@material-ui/core';
+import {
+  Container,
+  Divider,
+} from '@material-ui/core';
 
+import AppToolbar from './components/UI/AppToolbar/AppToolbar';
 import Footer from './components/UI/Footer/Footer';
 import Login from './pages/Login/Login';
 import Main from './pages/Main/Main';
@@ -28,8 +32,10 @@ const ProtectedRoute = ({isAllowed, redirectTo, ...props}) => {
 const App = () => {
     const user = useSelector(state => state.users.user);
     return (
-        <div>
+        <div className="box">
             <NotificationContainer/>
+            <AppToolbar/>
+            <Divider className="dividerline" style={{backgroundColor: 'blue', height: '2px'}} variant="middle"/>
             <main>
                 <Container maxWidth="xl">
                     <Switch>

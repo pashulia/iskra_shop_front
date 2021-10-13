@@ -1,3 +1,11 @@
 .wrap {
-    margin: 100px;
+    margin: 40px;
+}
+
+.brand {
+    margin-right: 10px;
+}
+
+.link {
+    text-decoration: none;
 }

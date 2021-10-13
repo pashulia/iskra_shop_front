@@ -1,94 +1,119 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
+import {
+  Collapse,
+  List,
+} from '@material-ui/core';
 import Button from '@material-ui/core/Button';
+import {
+  blue,
+  green,
+  grey,
+  orange,
+  purple,
+  red,
+} from '@material-ui/core/colors';
 import ListItemText from '@material-ui/core/ListItemText';
-import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
-import { withStyles } from '@material-ui/core/styles';
-import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
+import { styled } from '@material-ui/core/styles';
+import ExpandLess from '@material-ui/icons/ExpandLess';
+import ExpandMore from '@material-ui/icons/ExpandMore';
 
 import c from './Catalog.module.css';
 
-const StyledMenu = withStyles({
-    paper: {
-        border: '1px solid #d3d4d5',
+const BreakeButton = styled(Button)(({ theme }) => ({
+    color: theme.palette.getContrastText(purple[500]),
+    backgroundColor: purple[500],
+    '&:hover': {
+        backgroundColor: purple[700],
     },
-})((props) => (
-    <Menu
-        elevation={0}
-        getContentAnchorEl={null}
-        anchorOrigin={{
-            vertical: 'bottom',
-            horizontal: 'center',
-        }}
-        transformOrigin={{
-            vertical: 'top',
-            horizontal: 'center',
-        }}
-        {...props}
-    />
-));
+}));
 
-const StyledMenuItem = withStyles((theme) => ({
-    root: {
-        '&:focus': {
-            backgroundColor: theme.palette.primary.main,
-            '& .MuiListItemIcon-root, & .MuiListItemText-primary': {
-                color: theme.palette.common.white,
-            },
-        },
+const SparkButton = styled(Button)(({ theme }) => ({
+    color: theme.palette.getContrastText(red[500]),
+    backgroundColor: red[500],
+    '&:hover': {
+        backgroundColor: red[700],
     },
-}))(MenuItem);
+}));
+
+const BeldButton = styled(Button)(({ theme }) => ({
+    color: theme.palette.getContrastText(blue[500]),
+    backgroundColor: blue[500],
+    '&:hover': {
+        backgroundColor: blue[700],
+    },
+}));
+
+const RollButton = styled(Button)(({ theme }) => ({
+    color: theme.palette.getContrastText(green[400]),
+    backgroundColor: green[400],
+    '&:hover': {
+        backgroundColor: green[700],
+    },
+}));
+
+const WiresButton = styled(Button)(({ theme }) => ({
+    color: theme.palette.getContrastText(orange[400]),
+    backgroundColor: orange[400],
+    '&:hover': {
+        backgroundColor: orange[700],
+    },
+}));
+
+const OtherButton = styled(Button)(({ theme }) => ({
+    color: theme.palette.getContrastText(grey[400]),
+    backgroundColor: grey[400],
+    '&:hover': {
+        backgroundColor: grey[700],
+    },
+}));
 
 export default function Catalog() {
-    const [anchorEl, setAnchorEl] = React.useState(null);
+    
+    const [open, setOpen] = React.useState(true);
 
-    const handleClick = (event) => {
-        setAnchorEl(event.currentTarget);
-    };
-
-    const handleClose = () => {
-        setAnchorEl(null);
+    const handleClick = () => {
+        setOpen(!open);
     };
 
     return (
         <div className={c.wrap}>
-            <Button
-                aria-controls="customized-menu"
-                aria-haspopup="true"
-                variant="contained"
-                color="primary"
-                onClick={handleClick}
+            <List 
+                sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
+                component="nav"
+                aria-labelledby="nested-list-subheader"
             >
-                <MenuRoundedIcon fontSize="large"/>
-                Каталог автозапчастей
-            </Button>
-            <StyledMenu
-                id="customized-menu"
-                anchorEl={anchorEl}
-                keepMounted
-                open={Boolean(anchorEl)}
-                onClose={handleClose}
-            >
-                <StyledMenuItem>
-                    <ListItemText primary="Свечи"/>
-                </StyledMenuItem>
-                <StyledMenuItem>
-                    <ListItemText primary="Провода"/>
-                </StyledMenuItem>
-                <StyledMenuItem>
-                    <ListItemText primary="Тормозные колодки"/>
-                </StyledMenuItem>
-                <StyledMenuItem>
-                    <ListItemText primary="Ремни"/>
-                </StyledMenuItem>
-                <StyledMenuItem>
-                    <ListItemText primary="Ролики"/>
-                </StyledMenuItem>
-                <StyledMenuItem>
-                    <ListItemText primary="Наконечники и катушки зажигания"/>
-                </StyledMenuItem>
-            </StyledMenu>
+                <Button onClick={handleClick} >
+                    <ListItemText primary="Каталог автозапчастей" />
+                    {open ? <ExpandLess /> : <ExpandMore />}
+                </Button>
+                <Collapse in={open} timeout="auto" unmountOnExit>
+                    <List component="div" disablePadding>
+                        <SparkButton sx={{ pl: 4 }} >
+                            <Link className="link" to="/products">
+                                <ListItemText className="link" primary="Свечи"/>
+                            </Link>
+                        </SparkButton>
+                        <WiresButton sx={{ pl: 4 }} >
+                            <ListItemText primary="Провода" />
+                        </WiresButton>
+                        <BreakeButton variant="contained">
+                            <ListItemText primary="Тормозные колодки" />
+                        </BreakeButton>
+                        <BeldButton sx={{ pl: 4 }}>
+                            <ListItemText primary="Ремни" />
+                        </BeldButton>
+                        <RollButton sx={{ pl: 4 }}>
+                            <ListItemText primary="Ролики" />
+                        </RollButton>
+                        <OtherButton sx={{ pl: 4 }}>
+                            <ListItemText primary="Наконечники и катушки зажигания" />
+                        </OtherButton>
+                    </List>
+                </Collapse>
+            </List>           
         </div>
     );
 }

@@ -1,14 +1,16 @@
-import React from "react";
-import {Card, CardGroup} from "react-bootstrap";
-import first from "../../../../assets/productImagesSmall/hi-q001.jpeg";
-import second from "../../../../assets/productImagesSmall/denso002.jpeg";
-import third from "../../../../assets/productImagesSmall/ngk003.jpg";
-import fourth from "../../../../assets/productImagesSmall/bosch004.jpeg";
+import React from 'react';
+
+import { Card } from 'react-bootstrap';
+
+import fourth from '../../../../assets/productImagesSmall/bosch004.jpeg';
+import second from '../../../../assets/productImagesSmall/denso002.jpeg';
+import first from '../../../../assets/productImagesSmall/hi-q001.jpeg';
+import third from '../../../../assets/productImagesSmall/ngk003.jpg';
 
 const PopularProduct = () => {
     return (
-        <div style={{marginLeft: 70}}>
-            <Card style={{width: '18rem', flexDirection: 'row', border: 'none'}}>
+        <div style={{marginLeft: 10}}>
+            <Card style={{width: '16rem', flexDirection: 'row', border: 'none'}}>
                 <div style={{border: '1px solid #0dcaf0'}}>
                     <Card.Img variant="top" src={first}/>
                 </div>
@@ -22,7 +24,7 @@ const PopularProduct = () => {
                 </Card.Body>
             </Card>
             <br/>
-            <Card style={{width: '18rem', flexDirection: 'row', border: 'none'}}>
+            <Card style={{width: '16rem', flexDirection: 'row', border: 'none'}}>
                 <div style={{border: '1px solid #0dcaf0'}}>
                     <Card.Img variant="top" src={second}/>
                 </div>
@@ -36,7 +38,7 @@ const PopularProduct = () => {
                 </Card.Body>
             </Card>
             <br/>
-            <Card style={{width: '18rem', flexDirection: 'row', border: 'none'}}>
+            <Card style={{width: '16rem', flexDirection: 'row', border: 'none'}}>
                 <div style={{border: '1px solid #0dcaf0'}}>
                     <Card.Img variant="top" src={third}/>
                 </div>
@@ -50,7 +52,7 @@ const PopularProduct = () => {
                 </Card.Body>
             </Card>
             <br/>
-            <Card style={{width: '18rem', flexDirection: 'row', border: 'none'}}>
+            <Card style={{width: '16rem', flexDirection: 'row', border: 'none'}}>
                 <div style={{border: '1px solid #0dcaf0'}}>
                     <Card.Img variant="top" src={fourth}/>
                 </div>

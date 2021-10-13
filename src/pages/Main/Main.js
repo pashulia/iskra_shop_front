@@ -1,6 +1,3 @@
-import { Divider } from '@material-ui/core';
-
-import AppToolbar from '../../components/UI/AppToolbar/AppToolbar';
 import Carausel from '../../components/UI/Carausel/Carausel';
 import Catalog from '../../components/UI/Catalog/Catalog';
 import BrakePadsProductTabs
@@ -15,10 +12,6 @@ import PromoBlock from '../../components/UI/PromoBlock/PromoBlock';
 const Main = () => {
     return (
         <>
-            <header>
-                <AppToolbar />
-            </header>
-            <Divider style={{backgroundColor: 'blue', height: '2px'}} />
             <div className="App">
                 <div className="Sidebar">
                     <Catalog />
