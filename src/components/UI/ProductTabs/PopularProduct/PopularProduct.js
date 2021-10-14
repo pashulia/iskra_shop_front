@@ -1,7 +1,6 @@
 import React from 'react';
-
-import { Card } from 'react-bootstrap';
-
+import {Card} from 'react-bootstrap';
+import './../PopularProductTabs.scss';
 import fourth from '../../../../assets/productImagesSmall/bosch004.jpeg';
 import second from '../../../../assets/productImagesSmall/denso002.jpeg';
 import first from '../../../../assets/productImagesSmall/hi-q001.jpeg';
@@ -9,58 +8,58 @@ import third from '../../../../assets/productImagesSmall/ngk003.jpg';
 
 const PopularProduct = () => {
     return (
-        <div style={{marginLeft: 10}}>
-            <Card style={{width: '16rem', flexDirection: 'row', border: 'none'}}>
-                <div style={{border: '1px solid #0dcaf0'}}>
+        <div className="wrap">
+            <Card className="card">
+                <div className="frame">
                     <Card.Img variant="top" src={first}/>
                 </div>
                 <Card.Body>
-                    <Card.Subtitle style={{fontSize: 14, marginBottom: 10}}>
-                        <a href="#" style={{textDecoration: 'none', color: 'black'}}>Колодки для Lada</a>
+                    <Card.Subtitle className="subtitle">
+                        <a href="#" className="link">Колодки для Lada</a>
                     </Card.Subtitle>
-                    <Card.Text style={{color: 'red'}}>
+                    <Card.Text className="text">
                         4200тг
                     </Card.Text>
                 </Card.Body>
             </Card>
             <br/>
-            <Card style={{width: '16rem', flexDirection: 'row', border: 'none'}}>
-                <div style={{border: '1px solid #0dcaf0'}}>
+            <Card className="card">
+                <div className="frame">
                     <Card.Img variant="top" src={second}/>
                 </div>
                 <Card.Body>
-                    <Card.Subtitle style={{fontSize: '14px', marginBottom: 10}}>
-                        <a href="#" style={{textDecoration: 'none', color: 'black'}}>Свечи для Toyota</a>
+                    <Card.Subtitle className="subtitle">
+                        <a href="#" className="link">Свечи для Toyota</a>
                     </Card.Subtitle>
-                    <Card.Text style={{color: 'red'}}>
+                    <Card.Text className="text">
                         1190тг
                     </Card.Text>
                 </Card.Body>
             </Card>
             <br/>
-            <Card style={{width: '16rem', flexDirection: 'row', border: 'none'}}>
-                <div style={{border: '1px solid #0dcaf0'}}>
+            <Card className="card">
+                <div className="frame">
                     <Card.Img variant="top" src={third}/>
                 </div>
                 <Card.Body>
-                    <Card.Subtitle style={{fontSize: '14px', marginBottom: 10}}>
-                        <a href="#" style={{textDecoration: 'none', color: 'black'}}>Свечи для Mazda</a>
+                    <Card.Subtitle className="subtitle">
+                        <a href="#" className="link">Свечи для Mazda</a>
                     </Card.Subtitle>
-                    <Card.Text style={{color: 'red'}}>
+                    <Card.Text className="text">
                         990тг
                     </Card.Text>
                 </Card.Body>
             </Card>
             <br/>
-            <Card style={{width: '16rem', flexDirection: 'row', border: 'none'}}>
-                <div style={{border: '1px solid #0dcaf0'}}>
+            <Card className="card">
+                <div className="frame">
                     <Card.Img variant="top" src={fourth}/>
                 </div>
                 <Card.Body>
-                    <Card.Subtitle style={{fontSize: '14px', marginBottom: 10}}>
-                        <a href="#" style={{textDecoration: 'none', color: 'black'}}>Свечи для Audi</a>
+                    <Card.Subtitle className="subtitle">
+                        <a href="#" className="link">Свечи для Audi</a>
                     </Card.Subtitle>
-                    <Card.Text style={{color: 'red'}}>
+                    <Card.Text className="text">
                         1100тг
                     </Card.Text>
                 </Card.Body>
