@@ -2,7 +2,7 @@
   @if $breakpoint == regular-desktop {
     @media only screen and (max-width: 75em) {
       @content;
-    } //12000px
+    } //1200px
   }
   @if $breakpoint == big-tablets {
     @media only screen and (max-width: 64em) {

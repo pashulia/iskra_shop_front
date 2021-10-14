@@ -3,11 +3,12 @@ import 'bootstrap/dist/css/bootstrap.css';
 import {Tab, Tabs} from "react-bootstrap";
 import ProductsHiQ from "./ProductHiQ/ProductHiQ";
 import ProductsGaranti from "./ProductGaranti/ProductGaranti";
+import './ProductTabs.scss';
 
 function BrakePadsProductTabs() {
 
     return (
-        <div style={{display: 'block', width: 950, padding: 30}}>
+        <div className="tabs">
             <Tabs defaultActiveKey="first">
                 <Tab eventKey="first" title="Тормозные колодки Hi-Q">
                     <ProductsHiQ/>

@@ -4,11 +4,12 @@ import {Tab, Tabs} from "react-bootstrap";
 import ProductsNGK from "./ProductNGK/ProductNGK";
 import ProductsDenso from "./ProductDenso/ProductDenso";
 import ProductsBosch from "./ProductBosch/ProductBosch";
+import './ProductTabs.scss';
 
 function SparkPlugProductTabs() {
 
     return (
-        <div style={{display: 'block', width: 950, padding: 30}}>
+        <div className="tabs">
             <Tabs defaultActiveKey="first">
                 <Tab eventKey="first" title="Свечи NGK">
                     <ProductsNGK/>
