@@ -9,8 +9,8 @@ import third from '../../../../assets/productImagesSmall/ngk003.jpg';
 const PopularProduct = () => {
     return (
         <div className="wrap">
-            <Card className="card">
-                <div className="frame">
+            <Card className="frame">
+                <div className="frame__card">
                     <Card.Img variant="top" src={first}/>
                 </div>
                 <Card.Body>
@@ -23,8 +23,8 @@ const PopularProduct = () => {
                 </Card.Body>
             </Card>
             <br/>
-            <Card className="card">
-                <div className="frame">
+            <Card className="frame">
+                <div className="frame__card">
                     <Card.Img variant="top" src={second}/>
                 </div>
                 <Card.Body>
@@ -37,8 +37,8 @@ const PopularProduct = () => {
                 </Card.Body>
             </Card>
             <br/>
-            <Card className="card">
-                <div className="frame">
+            <Card className="frame">
+                <div className="frame__card">
                     <Card.Img variant="top" src={third}/>
                 </div>
                 <Card.Body>
@@ -51,8 +51,8 @@ const PopularProduct = () => {
                 </Card.Body>
             </Card>
             <br/>
-            <Card className="card">
-                <div className="frame">
+            <Card className="frame">
+                <div className="frame__card">
                     <Card.Img variant="top" src={fourth}/>
                 </div>
                 <Card.Body>
