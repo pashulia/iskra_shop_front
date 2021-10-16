@@ -1,8 +1,8 @@
 import React from 'react';
 
 import {
-  Card,
-  CardGroup,
+    Card,
+    CardGroup,
 } from 'react-bootstrap';
 
 import denso from '../../../assets/image/denso-3.jpg';
@@ -22,7 +22,7 @@ export default function PromoBlock() {
                         <h1>Коллекция Зима-2022</h1>
                     </Card.Title>
                 </Card>
-                <Card style={{border: '1px solid white'}} className={c.bannerSmall}>
+                <Card className={c.bannerSmall}>
                     <a>
                         <Card.Img variant="bottom" src={ngk} style={{width: '23rem'}}/>
                     </a>

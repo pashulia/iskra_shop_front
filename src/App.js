@@ -2,17 +2,17 @@ import './App.scss';
 
 import React from 'react';
 
-import { NotificationContainer } from 'react-notifications';
-import { useSelector } from 'react-redux';
+import {NotificationContainer} from 'react-notifications';
+import {useSelector} from 'react-redux';
 import {
-  Redirect,
-  Route,
-  Switch,
+    Redirect,
+    Route,
+    Switch,
 } from 'react-router-dom';
 
 import {
-  Container,
-  Divider,
+    Container,
+    Divider,
 } from '@material-ui/core';
 
 import AppToolbar from './components/UI/AppToolbar/AppToolbar';
@@ -33,11 +33,11 @@ const App = () => {
     const user = useSelector(state => state.users.user);
     return (
         <div className="box">
-            <NotificationContainer/>
-            <AppToolbar/>
-            <Divider className="dividerline" style={{backgroundColor: 'blue', height: '2px'}} variant="middle"/>
-            <main>
-                <Container maxWidth="xl">
+            <Container maxWidth="xl">
+                <NotificationContainer/>
+                <AppToolbar/>
+                {/*<Divider className="dividerline" style={{backgroundColor: 'blue', height: '2px'}} variant="middle"/>*/}
+                <Main>
                     <Switch>
                         <ProtectedRoute
                             isAllowed={user}
@@ -75,9 +75,9 @@ const App = () => {
                         exact
                         component={Products}
                     />
-                </Container>
-            </main>
-            <Footer/>
+                </Main>
+                <Footer/>
+            </Container>
         </div>
     );
 };

@@ -14,6 +14,8 @@
 .bannerSmall {
     position: relative;
     overflow: hidden;
+    border: 1px solid white;
+    max-width: 350px;
 }
 
 .bannerText {
