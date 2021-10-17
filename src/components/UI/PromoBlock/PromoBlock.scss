@@ -1,9 +1,3 @@
-.wrap {
-    display: flex;
-    justify-content: space-around;
-    padding: 30px;
-}
-
 .bannerBig {
     border: 1px solid grey;
     position: relative;
@@ -19,7 +13,7 @@
 }
 
 .bannerText {
-    font-family: Century;
+    font-family: Century, serif;
     text-transform: capitalize;
     position: absolute;
     left: 25px;
@@ -44,4 +38,10 @@
     font-weight: 100;
     font-size: 25px;
     margin: 0;
+}
+
+@media screen and (max-width: 320px) {
+    .bannerText h1 {
+        font-size: 25px;
+    }
 }

@@ -10,36 +10,89 @@
   @include respond(small-phone) {
     //display: block;
   }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .sidebar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   //grid-area: n;
-}
-
-.promo__menu {
-  max-width: 300px;
 }
 
 .promo {
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.app-content {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+  }
+
+  &__menu {
+    max-width: 300px;
+  }
+
+  &__img {
+    max-width: 23rem;
+  }
 }
 
-*Card {
+* Card {
   text-decoration: none;
+
+  &--left {
+    margin-right: 25px;
+  }
+
+  &--center {
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+
+  &--right {
+    margin-left: 25px;
+  }
 }
 
 .box {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: block;
+  }
+
+  .promo__menu {
+    display: inline-flex;
+    justify-content: stretch;
+    align-items: center;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .promo__menu {
+    display: inline-block;
+    margin-left: 2px;
+    margin-bottom: 15px;
+  }
+
+  .promo__wrap {
+    display: block;
+  }
+
+  promo__img {
+    max-width: 200px;
+  }
 }

@@ -51,14 +51,14 @@ function Carausel() {
     };
 
     return (
-        <Box sx={{maxWidth: 900, flexGrow: 1}}>
+        <Box sx={{maxWidth: 600, flexGrow: 1}}>
             <Paper
                 square
                 elevation={0}
                 sx={{
                     display: 'flex',
                     alignItems: 'center',
-                    height: 100,
+                    height: 25,
                     pl: 2,
                     bgcolor: 'background.default',
                 }}
