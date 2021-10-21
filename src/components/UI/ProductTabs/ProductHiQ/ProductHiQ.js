@@ -10,7 +10,7 @@ const ProductsHiQ = () => {
     return (
         <CardGroup>
             <Card border="light" className="card-left">
-                <Card.Img variant="top" src={first}/>
+                <Card.Img className="image--product" variant="top" src={first}/>
                 <Card.Body>
                     <Card.Subtitle className="subtitle">Sangsin Hi-Q SP1048</Card.Subtitle>
                     <Card.Text>
@@ -22,7 +22,7 @@ const ProductsHiQ = () => {
                 </Card.Body>
             </Card>
             <Card border="light" className="card--center">
-                <Card.Img variant="top" src={second}/>
+                <Card.Img className="image--product" variant="top" src={second}/>
                 <Card.Body>
                     <Card.Subtitle className="subtitle">Sangsin Hi-Q SP1206</Card.Subtitle>
                     <Card.Text>
@@ -34,7 +34,7 @@ const ProductsHiQ = () => {
                 </Card.Body>
             </Card>
             <Card border="light" className="card--center">
-                <Card.Img variant="top" src={third}/>
+                <Card.Img className="image--product" variant="top" src={third}/>
                 <Card.Body>
                     <Card.Subtitle className="subtitle">Sangsin Hi-Q SP1271</Card.Subtitle>
                     <Card.Text>
@@ -46,7 +46,7 @@ const ProductsHiQ = () => {
                 </Card.Body>
             </Card>
             <Card border="light" className="card--right">
-                <Card.Img variant="top" src={fourth}/>
+                <Card.Img className="image--product" variant="top" src={fourth}/>
                 <Card.Body>
                     <Card.Subtitle className="subtitle">Sangsin Hi-Q SP1375</Card.Subtitle>
                     <Card.Text>

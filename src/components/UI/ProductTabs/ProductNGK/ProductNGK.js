@@ -15,7 +15,7 @@ const ProductsNGK = () => {
     return (
         <CardGroup>
             <Card border="light" className="card--left">
-                <Card.Img variant="top" src={first}/>
+                <Card.Img className="image--product" variant="top" src={first}/>
                 <Card.Body>
                     <Card.Subtitle className="subtitle">NGK 1682 DCPR7EGP</Card.Subtitle>
                     <Card.Text>
@@ -27,7 +27,7 @@ const ProductsNGK = () => {
                 </Card.Body>
             </Card>
             <Card border="light" className="card--center">
-                <Card.Img variant="top" src={second}/>
+                <Card.Img className="image--product" variant="top" src={second}/>
                 <Card.Body>
                     <Card.Subtitle className="subtitle">NGK 1208 ILZFR6D-11</Card.Subtitle>
                     <Card.Text>
@@ -39,7 +39,7 @@ const ProductsNGK = () => {
                 </Card.Body>
             </Card>
             <Card border="light" className="card--center">
-                <Card.Img variant="top" src={third}/>
+                <Card.Img className="image--product" variant="top" src={third}/>
                 <Card.Body>
                     <Card.Subtitle className="subtitle">NGK 3967 BKR5EKB-11</Card.Subtitle>
                     <Card.Text>
@@ -51,7 +51,7 @@ const ProductsNGK = () => {
                 </Card.Body>
             </Card>
             <Card border="light" className="card--right">
-                <Card.Img variant="top" src={fourth}/>
+                <Card.Img className="image--product" variant="top" src={fourth}/>
                 <Card.Body>
                     <Card.Subtitle className="subtitle">NGK 96596 ZKER6A-10EG</Card.Subtitle>
                     <Card.Text>

@@ -18,14 +18,14 @@ hr {
   margin-left: 10px;
 }
 
-.card {
+.frame {
   width: 16rem;
   flex-direction: row;
   border: none;
-}
 
-.frame {
-  border: 1px solid #0dcaf0;
+  &__card {
+    border: 1px solid #0dcaf0;
+  }
 }
 
 .subtitle {
@@ -40,4 +40,21 @@ hr {
 
 .text {
   color: red;
+}
+
+@media screen and (max-width: 320px) {
+  .main {
+    width: 200px;
+    padding: 5px;
+  }
+
+  .frame {
+    width: 15rem;
+  }
+
+  hr {
+    margin-left: 10px;
+    border: 1px solid;
+    width: 15rem;
+  }
 }

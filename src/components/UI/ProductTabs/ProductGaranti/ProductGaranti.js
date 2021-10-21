@@ -7,7 +7,7 @@ const ProductsGaranti = () => {
     return (
         <CardGroup>
             <Card border="light" className="card--left">
-                <Card.Img variant="top" src={brand}/>
+                <Card.Img className="image--product" variant="top" src={brand}/>
                 <Card.Body>
                     <Card.Subtitle className="subtitle">Garanti 01214.22</Card.Subtitle>
                     <Card.Text>
@@ -19,7 +19,7 @@ const ProductsGaranti = () => {
                 </Card.Body>
             </Card>
             <Card border="light" className="card--center">
-                <Card.Img variant="top" src={brand}/>
+                <Card.Img className="image--product" variant="top" src={brand}/>
                 <Card.Body>
                     <Card.Subtitle className="subtitle">Garanti 0306.12</Card.Subtitle>
                     <Card.Text>
@@ -31,7 +31,7 @@ const ProductsGaranti = () => {
                 </Card.Body>
             </Card>
             <Card border="light" className="card--center">
-                <Card.Img variant="top" src={brand}/>
+                <Card.Img className="image--product" variant="top" src={brand}/>
                 <Card.Body>
                     <Card.Subtitle className="subtitle">Garanti 0315.04</Card.Subtitle>
                     <Card.Text>
@@ -43,7 +43,7 @@ const ProductsGaranti = () => {
                 </Card.Body>
             </Card>
             <Card border="light" className="card--right">
-                <Card.Img variant="top" src={brand}/>
+                <Card.Img className="image--product" variant="top" src={brand}/>
                 <Card.Body>
                     <Card.Subtitle className="subtitle">Garanti 0367.00</Card.Subtitle>
                     <Card.Text>

@@ -1,0 +1,28 @@
+.footer__wrap {
+    background: black;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.footer__content {
+    color: aliceblue;
+    margin-left: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer__content {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer__wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__content {
+        margin-top: 25px;
+        margin-left: 0;
+    }
+}

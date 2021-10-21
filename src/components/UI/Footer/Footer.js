@@ -1,13 +1,13 @@
 import React from 'react';
 
-import c from './Footer.module.css';
+import './Footer.scss';
 import FormSubscribe from './SubscribeForm/SubscribeForm';
 
 const Footer = () => {
     return (
-        <div className={c.wrap}>
+        <div className="footer__wrap">
             <FormSubscribe/>
-            <h3 className={c.content}>ТОО "AvtoIskra" 2021</h3>
+            <h3 className="footer__content">ТОО "AvtoIskra" 2021</h3>
         </div>
     )
 };
