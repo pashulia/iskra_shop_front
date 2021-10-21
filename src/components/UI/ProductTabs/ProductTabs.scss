@@ -4,17 +4,8 @@
   padding: 30px;
 }
 
-.card--left {
-  margin-right: 25px;
-}
-
-.card--center {
-  margin-right: 25px;
-  margin-left: 25px;
-}
-
-.card--right {
-  margin-left: 25px;
+.image--product {
+  width: 150px;
 }
 
 .subtitle {
@@ -23,4 +14,19 @@
 
 .link {
   text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .tabs {
+    width: 700px;
+  }
+  .image--product {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .tabs {
+    width: 320px;
+  }
 }

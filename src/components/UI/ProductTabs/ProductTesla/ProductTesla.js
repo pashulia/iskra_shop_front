@@ -10,7 +10,7 @@ const ProductsTesla = () => {
     return (
         <CardGroup>
             <Card border="light" className="card--left">
-                <Card.Img variant="top" src={first}/>
+                <Card.Img className="image--product" variant="top" src={first}/>
                 <Card.Body>
                     <Card.Subtitle className="subtitle">Tesla T482B</Card.Subtitle>
                     <Card.Text>
@@ -22,7 +22,7 @@ const ProductsTesla = () => {
                 </Card.Body>
             </Card>
             <Card border="light" className="card--center">
-                <Card.Img variant="top" src={second}/>
+                <Card.Img className="image--product" variant="top" src={second}/>
                 <Card.Body>
                     <Card.Subtitle className="subtitle">Tesla T247P</Card.Subtitle>
                     <Card.Text>
@@ -34,7 +34,7 @@ const ProductsTesla = () => {
                 </Card.Body>
             </Card>
             <Card border="light" className="card--center">
-                <Card.Img variant="top" src={third}/>
+                <Card.Img className="image--product" variant="top" src={third}/>
                 <Card.Body>
                     <Card.Subtitle className="subtitle">Tesla T181b</Card.Subtitle>
                     <Card.Text>
@@ -46,7 +46,7 @@ const ProductsTesla = () => {
                 </Card.Body>
             </Card>
             <Card border="light" className="card--right">
-                <Card.Img variant="top" src={fourth}/>
+                <Card.Img className="image--product" variant="top" src={fourth}/>
                 <Card.Body>
                     <Card.Subtitle className="subtitle">Tesla T297B</Card.Subtitle>
                     <Card.Text>
