@@ -92,7 +92,7 @@ export default function Catalog() {
                 <Collapse in={open} timeout="auto" unmountOnExit>
                     <List component="div" disablePadding>
                         <SparkButton sx={{ pl: 4 }} >
-                            <Link className="link" to="/products">
+                            <Link to="/products">
                                 <ListItemText className="link" primary="Свечи"/>
                             </Link>
                         </SparkButton>

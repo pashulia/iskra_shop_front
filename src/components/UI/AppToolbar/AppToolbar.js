@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom';
 import {
   Grid,
   Toolbar,
-  Typography,
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -41,11 +40,9 @@ const AppToolbar = () => {
             <Toolbar>
                 <Grid container justifyContent="space-between" alignItems="center">
                     <InfoBlock/>
-                    <Typography variant="h5">
-                        <Link className={classes.mainLink} to="/">
-                            <img src={logo} alt="logo" className={classes.logo}/>
-                        </Link>
-                    </Typography>
+                    <Link className={classes.mainLink} to="/">
+                        <img width="230" src={logo} alt="logo" className={classes.logo}/>
+                    </Link>
                     <Grid item>
                         {
                             user ? <UserMenu user={user}/> : <AnonymousMenu/>

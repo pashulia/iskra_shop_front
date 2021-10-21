@@ -16,20 +16,17 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    imgPath:
-      'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=900&h=600&q=60',
+    imgPath: 'https://i.ibb.co/561kVY5/DSCF0802.jpg',
+    text: "Fourth"
   },
   {
-    imgPath:
-      'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=900&h=600&q=60',
+    imgPath: 'https://i.ibb.co/3MkdCrn/DSCF0819.jpg'
   },
   {
-    imgPath:
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&h=600&q=80',
+    imgPath: 'https://i.ibb.co/WWsGrzR/DSCF0820.jpg'
   },
   {
-    imgPath:
-      'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=900&h=600&q=60',
+    imgPath: 'https://i.ibb.co/TMPXnPs/DSCF0830.jpg'
   },
 ];
 
